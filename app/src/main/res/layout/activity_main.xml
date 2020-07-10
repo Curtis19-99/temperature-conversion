@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:paddingTop="16dp"
+  android:paddingBottom="16dp"
+  tools:context=".MainActivity">
+  <EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:inputType="numberDecimal"
+    android:ems="10"
+    android:id="@+id/temperatureEditText"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentStart="true"
+    android:hint="Enter Temperature"
+    />
+  <RadioGroup
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/temperatureEditText"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentEnd="true"
+    android:id="@+id/radioGroup">
+    <RadioButton
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="From Celsius to Farenheit"
+      android:id="@+id/toFahrenheitRadioButton"
+      android:checked="true"/>
+    <RadioButton
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="From Fahrenheit to Celsius"
+      android:id="@+id/toCelsiusRadioButton"
+      android:checked="true"/>
+    <RadioButton
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="From Kelvin to Celsius"
+      android:id="@+id/toCelsiusFromKelvinRadioButton"
+      android:checked="true"/>
+    <RadioButton
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="From Celsius to Kelvin"
+      android:id="@+id/toKelvinFromCelsiusRadioButton"
+      android:checked="true"/>
+    <RadioButton
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="From Fahrenheit to Kelvin"
+      android:id="@+id/toKelvinFromFahrenheitRadioButton"
+      android:checked="true"/>
+    <RadioButton
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="From Kelvin to Fahrenheit"
+      android:id="@+id/toFahrenheitFromKelvinRadioButton"
+      android:checked="true"/>
+
+  </RadioGroup>
+<!--  <Button-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:text="Convert"-->
+<!--    android:id="@+id/convertButton"-->
+<!--    android:layout_below="@+id/radioGroup"-->
+<!--    android:layout_alignParentStart="true"-->
+<!--    android:onClick="convert"-->
+<!--    android:nestedScrollingEnabled="false"/>-->
+<!--  <EditText-->
+<!--    android:id="@+id/temperatureEditText2"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:layout_marginTop="313dp"-->
+<!--    android:layout_marginStart="-2dp"-->
+<!--    android:layout_alignParentStart="true"-->
+<!--    android:layout_alignParentTop="true"-->
+<!--    android:ems="10"-->
+<!--    android:hint="Enter Temperature"-->
+<!--    android:inputType="numberDecimal"/>-->
+<!--  <RadioGroup-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:layout_below="@id/radioGroup"-->
+<!--    android:layout_alignParentStart="true"-->
+<!--    android:layout_alignParentEnd="true"-->
+<!--    android:id="@+id/radioGroup2">-->
+
+<!--  </RadioGroup>-->
+  <Button
+    android:id="@+id/convertButton2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="1dp"
+    android:layout_alignParentStart="true"
+    android:layout_below="@+id/radioGroup"
+    android:nestedScrollingEnabled="false"
+    android:onClick="convert"
+    android:text="@string/convert"/>
+</RelativeLayout>
